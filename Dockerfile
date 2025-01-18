@@ -23,11 +23,11 @@ RUN wget https://raw.githubusercontent.com/juewuy/ShellCrash/master/install.sh &
     && source /etc/profile &> /dev/null && (echo "2"; sleep 2; echo "0"; sleep 2; echo "1"; sleep 2; echo "1"; sleep 2; echo "2"; sleep 2; echo "1"; sleep 2; echo "https://suo.yt/AhfmRc1"; sleep 2; echo "1"; sleep 5; echo "1"; sleep 5; echo "0") | /etc/ShellCrash/menu.sh && mv /etc/ShellCrash /etc/ShellCrash_bak && mkdir /etc/ShellCrash
 
 # 映射端口
-EXPOSE map[7890/tcp:{}]
-EXPOSE map[9999/tcp:{}]
+#EXPOSE map[7890/tcp:{}]
+#EXPOSE map[9999/tcp:{}]
 
 # 设置挂载点
-VOLUME ["/etc/ShellCrash"]
+#VOLUME ["/etc/ShellCrash"]
 
 # 设置环境变量
 ENV ENV="/etc/profile"
