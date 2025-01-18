@@ -1,5 +1,4 @@
 <h1 align="center">
-  <img src="https://github.com/naspilot/shellcrash/raw/main/logo.png" alt="Clash" width="200">
   <br>ShellCrash<br>
 </h1>
 
