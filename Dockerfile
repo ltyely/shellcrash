@@ -20,16 +20,14 @@ RUN apk add --no-cache curl wget nftables tzdata \
     && apk del tzdata
 # 安装软件
 RUN wget https://raw.githubusercontent.com/juewuy/ShellCrash/master/install.sh && (echo "1"; sleep 2; echo "2"; sleep 2; echo "1"; sleep 2; echo "1") | sh install.sh \
-    && source /etc/profile &> /dev/null \
-    && (echo "2"; sleep 2; echo "1"; sleep 2; echo "1"; echo "2"; sleep 2; echo "1"; sleep 2; echo "https://dler.cloud/subscribe/xT9BmPY5ueoDAtIsdSCH?clash=smart&lv=1"; sleep 2; echo "1"; sleep 5; echo "1"; sleep 5; echo "2"; sleep 2; echo "1"; sleep 2; echo "1"; sleep 2; echo "7"; sleep 2; echo "4"; sleep 2; echo "0"; sleep 2; echo "0"; sleep 2; echo "1"; sleep 5;  echo "0") | /etc/ShellCrash/menu.sh \
-    && mv /etc/ShellCrash /etc/ShellCrash_bak && mkdir /etc/ShellCrash
+    && source /etc/profile &> /dev/null && (echo "2"; sleep 2; echo "1"; sleep 2; echo "1"; echo "2"; sleep 2; echo "1"; sleep 2; echo "https://dler.cloud/subscribe/xT9BmPY5ueoDAtIsdSCH?clash=smart&lv=1"; sleep 2; echo "1"; sleep 5; echo "1"; sleep 5; echo "2"; sleep 2; echo "1"; sleep 2; echo "1"; sleep 2; echo "7"; sleep 2; echo "4"; sleep 2; echo "0"; sleep 2; echo "0"; sleep 2; echo "1"; sleep 5;  echo "0") | /etc/ShellCrash/menu.sh && mv /etc/ShellCrash /etc/ShellCrash_bak && mkdir /etc/ShellCrash
 
 # 映射端口
 EXPOSE 7890
 EXPOSE 9999
 
-# 设置挂载点
-VOLUME ["/etc/ShellCrash"]
+## 设置挂载点
+#VOLUME ["/etc/ShellCrash"]
 
 # 设置环境变量
 ENV ENV="/etc/profile"
