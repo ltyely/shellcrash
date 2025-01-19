@@ -25,8 +25,8 @@ RUN wget https://raw.githubusercontent.com/juewuy/ShellCrash/master/install.sh &
     && mv /etc/ShellCrash /etc/ShellCrash_bak && mkdir /etc/ShellCrash
 
 # 映射端口
-EXPOSE map[7890/tcp:7890]
-EXPOSE map[9999/tcp:9999]
+EXPOSE 7890
+EXPOSE 9999
 
 # 设置挂载点
 #VOLUME ["/etc/ShellCrash"]
