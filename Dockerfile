@@ -29,7 +29,7 @@ EXPOSE 7890
 EXPOSE 9999
 
 # 设置挂载点
-#VOLUME ["/etc/ShellCrash"]
+VOLUME ["/etc/ShellCrash"]
 
 # 设置环境变量
 ENV ENV="/etc/profile"
