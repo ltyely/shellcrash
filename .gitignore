@@ -1,0 +1,14 @@
+# 忽略配置文件中的敏感信息
+config/subscriptions.txt
+
+# 忽略Docker相关临时文件
+.docker
+*.log
+
+# 通用忽略项
+.DS_Store
+node_modules
+__pycache__/
+*.py[cod]
+*$py.class
+.env
